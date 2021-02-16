@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>my practice weather app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="weather-info-top">
+      <h2 id="location"></h2>
+      <p id="atmosphere"></p>
+      <p id="temperature"></p>
+      <img id="icon"  alt="icon">
+
+    </div>
+    <div class="weather-info-bottom">
+      <p id="humidity"></p>
+      <p id="dewpoint"></p>
+      <p id="feels-like"></p>
+      <p id="wind"></p>
+    </div>
+    <button id="c-location" data-toggle="modal" data-target=".modal">Change location</button>
+    
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Location</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+        
+              <label for="city">City:</label>
+              <input name="city" id="city" type="text" placeholder="enter City..."><br>
+              <label for="state">State:</label>
+              <input name="state" id="state" type="text" placeholder="enter State..."><br>
+            
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-lg">Save changes</button>
+            <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div>
+    
+    <div class="weather-info-form">
+      
+      <p id="times">&times;</p>
+      
+      <form id="form">
+        
+        <label for="city">City:</label>
+        <input name="city" id="city" type="text" placeholder="enter City..."><br>
+        <label for="state">State:</label>
+        <input name="state" id="state" type="text" placeholder="enter State..."><br>
+        <input type="submit" id="submit" value="Save Changes">
+
+
+      </form>
+      </div>
+    </div>-->
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+  <script src="weather.js"></script>
+  <script src="ui.js"></script>
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
